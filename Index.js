@@ -23,28 +23,28 @@ app.listen(3000, (err)=> {
 
 
 
- function somar (num1, num2){
-     return parseInt(num1) + parseInt(num2)
- }
- function multiplicar(num1, num2){
-     return parseInt(num1) * parseInt(num2);
- }
- function dividir(num1, num2){
-     return parseInt(num1) / parseInt(num2)
- }
- function subtrair(num1, num2){
-     return parseInt(num1) - parseInt(num2)
- }
+    const somar = (num1, num2) => {
+        return parseInt(num1) + parseInt(num2)
+    }
+    const multiplicar = (num1, num2) => {
+        return parseInt(num1) * parseInt(num2);
+    }
+    const dividir = (num1, num2) => {
+        return parseInt(num1) / parseInt(num2)
+    }
+    const subtrair = (num1, num2) => {
+        return parseInt(num1) - parseInt(num2)
+    }
 
 
 
     app.get("/soma", (req, res) => {
-        const n1 = readlineSync.question('digite um numero: ');;
-        const n2 = readlineSync.question('digite um numero: ');;
+        const n1 = readlineSync.question('digite um numero: ');
+        const n2 = readlineSync.question('digite um segundo numero: ');
         const response = somar(n1,n2)
     res.send(`<h1>${response}</h1>`)
    
-})           
+    })           
     app.get("/multiplicar", (req,res)=>{
         const n1 = readlineSync.question('digite um numero: ');
         const n2 = readlineSync.question('digite um segundo numero: ');
@@ -68,3 +68,4 @@ app.listen(3000, (err)=> {
 
 
 
+module.export = somar
