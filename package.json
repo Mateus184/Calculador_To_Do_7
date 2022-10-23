@@ -18,5 +18,13 @@
   },
   "devDependencies": {
     "jest": "^29.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mateus184/Calculador_To_Do_7.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mateus184/Calculador_To_Do_7/issues"
+  },
+  "homepage": "https://github.com/Mateus184/Calculador_To_Do_7#readme"
 }
